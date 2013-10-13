@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="AngelFlameApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Angel Flame | We build awesome stuffs</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- 3rd party CSS -->
-        <link rel="stylesheet" href="public/vendor/normalize-css/normalize.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="public/css/index.css">
 
         <!-- 3rd party js -->
         <script src="public/vendor/jquery/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="public/vendor/angular/angular.min.js"></script>
+
+        <script src="public/js/index.js"></script>
+        <script src="public/js/AngelFlameControllers.js"></script>
     </head>
     <body>
 
+        <div class="container" ng-view></div>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--
         <script>
