@@ -21,12 +21,12 @@ module.exports = function(grunt) {
         noarg: true,
         sub: true,
         undef: true,
-        unused: true,
         boss: true,
         eqnull: true,
         browser: true,
         globals: {
-          jQuery: true
+          jQuery: true,
+          angular: true
         }
       },
       gruntfile: {
