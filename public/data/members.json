@@ -1,8 +1,24 @@
 [
+    {
+        "name" : "You-Sheng, Lin",
+        "nickname" : "Eyesbad",
+        "website" : "http://eyesbad.blogspot.tw/",
+        "avatar" : "http://placehold.it/150x150",
+        "tags" : ["FrontEnd", "JavaScript", "Traveller"],
+        "say" : "You guys rock"
+    },
     { 
         "name" : "Chia-Lung, Chen",
         "nickname" : "EragonJ",
         "website" : "http://eragonj.me",
+        "avatar" : "http://placehold.it/150x150",
+        "tags" : ["FrontEnd", "JavaScript", "Traveller"],
+        "say" : "You guys rock"
+    },
+    {
+        "name" : "Liang-Chi, Lee",
+        "nickname" : "Popochess",
+        "website" : "http://angelflame.org",
         "avatar" : "http://placehold.it/150x150",
         "tags" : ["FrontEnd", "JavaScript", "Traveller"],
         "say" : "You guys rock"

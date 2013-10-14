@@ -1,12 +1,12 @@
-<ul class="members list-unstyled">
+<ul class="members list-unstyled clearfix">
     <li class="member clearfix" ng-repeat="member in membersData">
         <a href={{member.website}} class="avatar-wrapper"><img ng-src="{{member.avatar}}"></a>
         <div class="details">
-            <div>{{member.nickname}} ({{member.name}})</div>
-            <div>
+            <div class="name">{{member.nickname}} ({{member.name}})</div>
+            <div class="tags">
                 <span class="label label-info" ng-repeat="tag in member.tags">{{tag}}</span>
             </div>
-            <div>
+            <div class="words">
                 <span>{{member.say}}</span>
             </div>
         </div>

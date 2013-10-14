@@ -1,16 +1,31 @@
-// global
+@import "compass/css3";
+@import "_mixins.scss";
+
+// override
 .label {
     margin: 0 5px 0 0;
 }
 
+// angelflame global
+.container {
+    margin-top: 10px;
+}
 
 // member
 .member {
     padding: 10px;
     border: 1px solid #ccc;
+    float: left;
+    @include calc(width, "100% / 4");
 
     .avatar-wrapper {
-        float: left;
         margin: 0 10px 0 0;
+
+        img {
+            $avatarSize: 150px;
+            width: $avatarSize;
+            height: $avatarSize;
+            @include border-radius($avatarSize / 2);
+        }
     }
 }
