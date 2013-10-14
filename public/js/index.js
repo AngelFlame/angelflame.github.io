@@ -25,9 +25,14 @@ AngelFlameApp.config(['$routeProvider', function($routeProvider) {
 angular.element(document).ready(function() {
 
     window.setTimeout(function() {
-        // show animations
-        angular.element('.before').addClass('animated fadeOutLeft');
-        angular.element('.after').addClass('animated fadeOutRight');
+        // start animations
+        angular.element('.logo > .before').addClass('animated fadeOutLeft');
+        angular.element('.logo > .after').addClass('animated fadeOutRight');
+
+        window.setTimeout(function() {
+            // hide animations
+            angular.element('.logo').addClass('hide');
+        }, 1000);
     }, 1000);
 
     // inject modules
