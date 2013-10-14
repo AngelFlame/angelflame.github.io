@@ -10,6 +10,35 @@
   border-right: 1px solid #ccc;
 }
 
+.logo div {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: white;
+  z-index: 1001;
+  overflow: hidden;
+}
+.logo img {
+  width: 600px;
+  height: 518px;
+  position: absolute;
+  top: 10%;
+}
+.logo .before {
+  left: 0;
+  background-position: 50% 50%;
+}
+.logo .before img {
+  right: -300px;
+}
+.logo .after {
+  right: 0;
+  background-position: 0% 50%;
+}
+.logo .after img {
+  left: -300px;
+}
+
 /*
  * contact.html
  */

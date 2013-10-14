@@ -20,3 +20,16 @@ AngelFlameApp.config(['$routeProvider', function($routeProvider) {
             redirectTo: '/members'
         });
 }]);
+
+// manual bootstrap
+angular.element(document).ready(function() {
+
+    window.setTimeout(function() {
+        // show animations
+        angular.element('.before').addClass('animated fadeOutLeft');
+        angular.element('.after').addClass('animated fadeOutRight');
+    }, 1000);
+
+    // inject modules
+    angular.bootstrap(document, ['AngelFlameApp']);
+});

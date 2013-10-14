@@ -15,6 +15,43 @@
     border-right: 1px solid #ccc;
 }
 
+.logo {
+
+    $imgWidth: 600px;
+    $imgHeight: 518px;
+
+    div {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background: white;
+        z-index: 1001;
+        overflow: hidden;
+    }
+    img {
+        width: $imgWidth;
+        height: $imgHeight;
+        position: absolute;
+        top: 10%;
+    }
+    .before {
+        left: 0;
+        background-position: 50% 50%;
+
+        img {
+            right: -0.5 * $imgWidth;
+        }
+    }
+    .after {
+        right: 0;
+        background-position: 0% 50%;
+
+        img {
+            left: -0.5 * $imgWidth;
+        }
+    }
+}
+
 /*
  * contact.html
  */
