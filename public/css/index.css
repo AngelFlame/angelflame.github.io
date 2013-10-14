@@ -6,6 +6,24 @@
   margin-top: 10px;
 }
 
+.v-divider {
+  border-right: 1px solid #ccc;
+}
+
+/*
+ * contact.html
+ */
+.contact-container {
+  float: none;
+  margin: 6em auto;
+}
+.contact-container .features-list {
+  margin: 5em 0;
+}
+
+/*
+ * member.html
+ */
 .member {
   padding: 10px;
   border: 1px solid #ccc;

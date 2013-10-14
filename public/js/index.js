@@ -12,6 +12,10 @@ AngelFlameApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'partials/members.html',
             controller: 'MembersController'
         })
+        .when('/contact', {
+            templateUrl: 'partials/contact.html',
+            controller: 'ContactController'
+        })
         .otherwise({
             redirectTo: '/members'
         });

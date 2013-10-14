@@ -1,7 +1,10 @@
 var AngelFlameControllers = angular.module('AngelFlameControllers', []);
 
-// register AboutController
 AngelFlameControllers.controller('AboutController', ['$scope', function($scope) {
+    // do nothing
+}]);
+
+AngelFlameControllers.controller('ContactController', ['$scope', function($scope) {
     // do nothing
 }]);
 
