@@ -1,8 +1,11 @@
 var AngelFlameControllers = angular.module('AngelFlameControllers', []);
 
-AngelFlameControllers.controller('AboutController', ['$scope', function($scope) {
-    // do nothing
-}]);
+AngelFlameControllers.controller('AboutController', [
+    '$scope', 
+    function($scope) {
+        $scope.currentClass = 'about';
+    }
+]);
 
 AngelFlameControllers.controller('ContactController', ['$scope', function($scope) {
     // do nothing

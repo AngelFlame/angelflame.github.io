@@ -17,23 +17,25 @@ AngelFlameApp.config(['$routeProvider', function($routeProvider) {
             controller: 'ContactController'
         })
         .otherwise({
-            redirectTo: '/members'
+            redirectTo: '/about'
         });
 }]);
 
 // manual bootstrap
 angular.element(document).ready(function() {
 
-    window.setTimeout(function() {
-        // start animations
-        angular.element('.logo > .before').addClass('animated fadeOutLeft');
-        angular.element('.logo > .after').addClass('animated fadeOutRight');
+    // window.setTimeout(function() {
+    //     // start animations
+    //     angular.element('.logo > .before').addClass('animated fadeOutLeft');
+    //     angular.element('.logo > .after').addClass('animated fadeOutRight');
 
-        window.setTimeout(function() {
-            // hide animations
-            angular.element('.logo').addClass('hide');
-        }, 1000);
-    }, 1000);
+    //     window.setTimeout(function() {
+    //         // hide animations
+    //         angular.element('.logo').addClass('hide');
+    //     }, 1000);
+    // }, 1000);
+
+    angular.element('.logo').addClass('hide');
 
     // inject modules
     angular.bootstrap(document, ['AngelFlameApp']);

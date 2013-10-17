@@ -2,12 +2,39 @@
   margin: 0 5px 0 0;
 }
 
+html,
+body {
+  font-family: 'Bubbler One', sans-serif;
+}
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Bubbler One', sans-serif;
+}
+
+body.about {
+  background: #fcfcfc;
+}
+
 .container {
   margin-top: 10px;
 }
 
 .v-divider {
   border-right: 1px solid #ccc;
+}
+
+.glyphicon-fire {
+  color: #cc0000;
 }
 
 .logo div {
@@ -73,4 +100,23 @@
   -ms-border-radius: 75px;
   -o-border-radius: 75px;
   border-radius: 75px;
+}
+
+/*
+ * about.html
+ */
+.about-container h1 {
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c9c9c9;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.about-container p {
+  width: 500px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }

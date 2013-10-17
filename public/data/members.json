@@ -22,5 +22,13 @@
         "avatar" : "http://placehold.it/150x150",
         "tags" : ["FrontEnd", "JavaScript", "Traveller"],
         "say" : "You guys rock"
+    },
+    {
+        "name" : "Nuz",
+        "nickname" : "Nuz",
+        "website" : "http://angelflame.org",
+        "avatar" : "http://placehold.it/150x150",
+        "tags" : ["FrontEnd", "JavaScript", "Traveller"],
+        "say" : "You guys rock"
     }
 ]
