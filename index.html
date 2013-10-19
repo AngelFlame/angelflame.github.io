@@ -18,12 +18,17 @@
 
         <!-- 3rd party js -->
         <script src="public/vendor/jquery/jquery.min.js"></script>
-        <script src="public/vendor/angular/angular.min.js"></script>
+        <!-- <script src="public/vendor/angular/angular.min.js"></script>-->
+
+        <!-- Replace here later with local code -->
+        <script src="http://code.angularjs.org/1.2.0-rc.3/angular.min.js"></script>
+        <script src="http://code.angularjs.org/1.2.0-rc.3/angular-route.js"></script>
+        
 
         <script src="public/js/index.js"></script>
         <script src="public/js/AngelFlameControllers.js"></script>
     </head>
-    <body>
+    <body id="mainBody" class=route-{{route}}>
         <div class="logo">
             <div class="before">
                 <img src="public/img/logo.png">

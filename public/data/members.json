@@ -4,7 +4,7 @@
         "nickname" : "Eyesbad",
         "website" : "http://eyesbad.blogspot.tw/",
         "avatar" : "http://placehold.it/150x150",
-        "tags" : ["FrontEnd", "JavaScript", "Traveller"],
+        "tags" : ["Computer Graphics"],
         "say" : "You guys rock"
     },
     { 
@@ -18,9 +18,9 @@
     {
         "name" : "Liang-Chi, Lee",
         "nickname" : "Popochess",
-        "website" : "http://angelflame.org",
+        "website" : "http://popochess.blogspot.tw/",
         "avatar" : "http://placehold.it/150x150",
-        "tags" : ["FrontEnd", "JavaScript", "Traveller"],
+        "tags" : ["iOS"],
         "say" : "You guys rock"
     },
     {
