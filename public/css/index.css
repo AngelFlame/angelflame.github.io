@@ -232,6 +232,9 @@ p {
   margin: 10px 20px;
   text-align: right;
 }
+.member-container .shared-detail-window .tags .icon-tag {
+  vertical-align: text-top;
+}
 
 /*
  * about.html

@@ -28,7 +28,10 @@
                 {{ currentMember.say }}
             </div>
             <div class="tags">
-                <span class="label label-{{tag.type}}" ng-repeat="tag in currentMember.tags">{{tag.name}}</span>
+                <span class="label label-{{tag.type}}" ng-repeat="tag in currentMember.tags">
+                    <span class="icon-tag glyphicon glyphicon-tag"></span>
+                    {{tag.name}}
+                </span>
             </div>
         </div>
     </div>
