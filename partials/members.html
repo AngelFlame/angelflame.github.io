@@ -6,13 +6,16 @@
     <div class="col-lg-10 col-lg-offset-1">
         <ul class="members list-unstyled clearfix">
             <li class="member clearfix" ng-repeat="member in membersData" ng-mouseenter="updateMemberIndex($index)">
-                <a href={{member.website}} class="avatar-wrapper"><img ng-src="{{member.avatar}}"></a>
+                <a href={{member.website}} class="avatar-wrapper" target="_blank">
+                    <img ng-src="{{member.avatar}}">
+                </a>
+                <div class="member-name">{{member.name}} ( {{member.nickname}} )</div>
 
                 <!-- Keep this for later responsive use-->
                 <div class="details">
                     <div class="name">{{member.nickname}} ({{member.name}})</div>
                     <div class="tags">
-                        <span class="label label-info" ng-repeat="tag in member.tags">{{tag}}</span>
+                        <span class="label label-{{tag.type}}" ng-repeat="tag in member.tags">{{tag.name}}</span>
                     </div>
                     <div class="words">
                         <span>{{member.say}}</span>
@@ -23,6 +26,9 @@
         <div class="shared-detail-window member-{{memberIndex}}" ng-class="{ 'hide' : !currentMember }">
             <div class="say">
                 {{ currentMember.say }}
+            </div>
+            <div class="tags">
+                <span class="label label-{{tag.type}}" ng-repeat="tag in currentMember.tags">{{tag.name}}</span>
             </div>
         </div>
     </div>
