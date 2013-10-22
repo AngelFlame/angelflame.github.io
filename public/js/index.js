@@ -17,6 +17,10 @@ AngelFlameApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'partials/contact.html',
             controller: 'ContactController'
         })
+        .when('/works', {
+            templateUrl: 'partials/works.html',
+            controller: 'WorksController'
+        })
         .otherwise({
             redirectTo: '/about'
         });

@@ -31,3 +31,9 @@ AngelFlameControllers.controller('MembersController', function($scope, $http) {
         }
     });
 });
+
+AngelFlameControllers.controller('WorksController', function($scope, $http) {
+    $http.get('public/data/works.json').success(function(worksData) {
+        $scope.worksData = worksData;
+    });
+});

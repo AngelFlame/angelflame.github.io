@@ -237,5 +237,21 @@ p {
 }
 
 /*
+ * works.html
+ */
+.works-container .works {
+  text-align: center;
+}
+.works-container .work {
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+.works-container .work h3 {
+  background: #ddd;
+  padding: 5px;
+  margin: 0;
+}
+
+/*
  * about.html
  */
