@@ -18,12 +18,9 @@
 
         <!-- 3rd party js -->
         <script src="public/vendor/jquery/jquery.min.js"></script>
-        <!-- <script src="public/vendor/angular/angular.min.js"></script>-->
-
-        <!-- Replace here later with local code -->
-        <script src="http://code.angularjs.org/1.2.0-rc.3/angular.min.js"></script>
-        <script src="http://code.angularjs.org/1.2.0-rc.3/angular-route.js"></script>
-        
+        <script src="public/vendor/angular/angular.min.js"></script>
+        <script src="public/vendor/angular-route/angular-route.min.js"></script>
+        <script src="public/vendor/angular-animate/angular-animate.min.js"></script>
 
         <script src="public/js/index.js"></script>
         <script src="public/js/AngelFlameControllers.js"></script>
@@ -67,7 +64,7 @@
             </div>
 
             <!-- body part, routeProvider will inject template into here -->
-            <div class="body" ng-view></div>
+            <div class="body slide-animation" ng-view></div>
 
             <!-- footer part, put something here -->
             <div class="footer"></div>

@@ -1,5 +1,6 @@
 var AngelFlameApp = angular.module('AngelFlameApp', [
     'ngRoute',
+    'ngAnimate',
     'AngelFlameControllers' /* Dependencies */
 ]);
 
@@ -54,5 +55,5 @@ angular.element(document).ready(function() {
     angular.element('.logo').addClass('hide');
 
     // inject modules
-    angular.bootstrap(document.getElementById('mainBody'), ['AngelFlameApp']);
+    angular.bootstrap(document, ['AngelFlameApp']);
 });
