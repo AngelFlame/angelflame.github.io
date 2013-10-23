@@ -3,7 +3,7 @@
         "name" : "You-Sheng, Lin",
         "nickname" : "Eyesbad",
         "website" : "http://eyesbad.blogspot.tw/",
-        "avatar" : "http://placehold.it/150x150",
+        "avatar" : "http://lorempixel.com/150/150/",
         "tags" : [
             { "name" : "Computer Graphics", "type" : "primary" },
             { "name" : "Sleeping", "type" : "info" }
@@ -14,7 +14,7 @@
         "name" : "Chia-Lung, Chen",
         "nickname" : "EragonJ",
         "website" : "http://eragonj.me",
-        "avatar" : "http://placehold.it/150x150",
+        "avatar" : "http://lorempixel.com/150/150/",
         "tags" : [
             { "name" : "FrontEnd", "type" : "primary" },
             { "name" : "JavaScript", "type" : "primary" },
@@ -26,7 +26,7 @@
         "name" : "Liang-Chi, Lee",
         "nickname" : "Popochess",
         "website" : "http://popochess.blogspot.tw/",
-        "avatar" : "http://placehold.it/150x150",
+        "avatar" : "http://lorempixel.com/150/150/",
         "tags" : [
             { "name" : "iOS", "type" : "primary" }
         ],
@@ -36,7 +36,7 @@
         "name" : "Nuz",
         "nickname" : "Nuz",
         "website" : "http://angelflame.org",
-        "avatar" : "http://placehold.it/150x150",
+        "avatar" : "http://lorempixel.com/150/150/",
         "tags" : [
             { "name" : "UI design", "type" : "primary" },
             { "name" : "Video Making", "type" : "primary" },
