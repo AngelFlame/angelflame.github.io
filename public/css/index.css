@@ -1,18 +1,17 @@
-.slide-animation.ng-enter,
-.slide-animation.ng-leave {
+.reveal-animation.ng-enter {
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
 
-.slide-animation.ng-enter,
-.slide-animation.ng-leave.ng-leave-active {
+.reveal-animation.ng-enter,
+.reveal-animation.ng-leave.ng-leave-active {
   opacity: 0;
 }
 
-.slide-animation.ng-leave,
-.slide-animation.ng-enter.ng-enter-active {
+.reveal-animation.ng-leave,
+.reveal-animation.ng-enter.ng-enter-active {
   opacity: 1;
 }
 
