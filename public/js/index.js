@@ -55,5 +55,6 @@ angular.element(document).ready(function() {
     angular.element('.logo').addClass('hide');
 
     // inject modules
+    // XXX: use document, otherwise ngAnimate will not work, weird
     angular.bootstrap(document, ['AngelFlameApp']);
 });
