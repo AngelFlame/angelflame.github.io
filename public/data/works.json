@@ -1,10 +1,18 @@
-{
-    "ios" : [
-        {
-            "name" : "Pencil Art",
-            "logo" : "http://placehold.it/200x150",
-            "download-link" : "https://itunes.apple.com/tw/app/pencilart/id693995392?l=zh&mt=8",
-            "description" : "xx"
-        }
-    ]
-}
+[
+    {
+        "name" : "Pencil Art",
+        "logo" : "http://lorempixel.com/300/200/",
+        "link" : "https://itunes.apple.com/tw/app/pencilart/id693995392?l=zh&mt=8",
+        "type" : "app",
+        "icon" : "fa-mobile",
+        "description" : "xx"
+    },
+    {
+        "name" : "AngelFlame",
+        "logo" : "http://lorempixel.com/300/200/",
+        "link" : "http://angelflame.org",
+        "type" : "website",
+        "icon" : "fa-link",
+        "description" : "xx"
+    }
+]
