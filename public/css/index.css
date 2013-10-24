@@ -22,6 +22,7 @@
 html,
 body {
   font-family: 'Bubbler One', sans-serif;
+  height: 100%;
 }
 html h1,
 html h2,
@@ -39,7 +40,9 @@ body h6 {
 }
 
 body.route-about {
-  background: #fcfcfc;
+  background: url(../img/sky.jpg);
+  background-size: cover;
+  color: #ffffff;
 }
 body.route-contact {
   background: #ffffff;
@@ -76,7 +79,7 @@ p {
 }
 
 .container {
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .v-divider {
@@ -84,7 +87,7 @@ p {
 }
 
 .glyphicon-fire {
-  color: #cc0000;
+  color: #f14949;
 }
 
 .logo div {
@@ -272,3 +275,6 @@ p {
 /*
  * about.html
  */
+.about-container {
+  margin-top: 8em;
+}

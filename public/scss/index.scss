@@ -12,6 +12,9 @@ html,
 body {
     font-family: 'Bubbler One', sans-serif;
 
+    // testing
+    height: 100%;
+
     h1,
     h2,
     h3,
@@ -25,7 +28,11 @@ body {
 body {
     // how to addClass when changing routes ?
     &.route-about {
-        background: #fcfcfc;
+        // background: #fcfcfc;
+
+        background: url(../img/sky.jpg);
+        background-size: cover;
+        color: #ffffff;
     }
     &.route-contact {
         background: #ffffff;
@@ -60,7 +67,7 @@ p {
 }
 
 .container {
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .v-divider {
@@ -69,7 +76,8 @@ p {
 
 
 .glyphicon-fire {
-    color: #cc0000;
+    // color: #cc0000;
+    color: rgb(241, 73, 73);
 }
 
 .logo {
@@ -274,5 +282,5 @@ p {
  * about.html
  */
 .about-container {
-
+    margin-top: 8em;
 }
