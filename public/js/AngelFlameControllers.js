@@ -36,4 +36,18 @@ AngelFlameControllers.controller('WorksController', function($scope, $http) {
     $http.get('public/data/works.json').success(function(worksData) {
         $scope.worksData = worksData;
     });
+
+    $scope.enter = function() {
+       $scope.selected = true; 
+    };
+
+    $scope.leave = function() {
+        $scope.selected = false;
+    };
+});
+
+AngelFlameControllers.directive('ngTap', function() {
+    return function($scope, $element, $attributes) {
+
+    };
 });

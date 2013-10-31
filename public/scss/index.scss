@@ -25,17 +25,38 @@ body {
     }
 }
 
-body {
-    // how to addClass when changing routes ?
-    &.route-about {
-        // background: #fcfcfc;
+.navbar {
+    font-size: 18px;
+}
 
+.fa.fa-heart {
+    color: orangered;
+}
+
+.tags {
+    .icon-tag {
+        vertical-align: text-top;
+    }
+}
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.route-about {
+        // http://miriadna.com/desctopwalls/images/max/Blue-sea-horizon.jpg
         background: url(../img/sky.jpg);
-        background-size: cover;
         color: #ffffff;
     }
     &.route-contact {
-        background: #ffffff;
+        // http://hqscreen.com/clouds-cityscapes-night-buildings-skyscrapers-taipei-101-wallpaper-28751/
+        background: url(../img/101-2.jpg);
+
+        @include respond-to(less-than-wide-handhelds) {
+            background-size: initial;
+            background-position: 60% 0;
+        }
     }
     &.route-members {
         background: #eeeeee;
@@ -54,7 +75,7 @@ h1 {
 
 p {
     width: 500px;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0 auto;
     margin-bottom: 20px;
 
@@ -123,6 +144,7 @@ p {
 .contact-container {
     float: none;
     margin: 6em auto;
+    color: #ffffff;
 
     .features-list {
         margin: 5em 0;
@@ -133,22 +155,22 @@ p {
  * member.html
  */
 .member-container {
+
     .members {
         margin: 20px 0 0 0;
     }
 
     .member {
-        padding: 10px;
+        padding-bottom: 10px;
         float: left;
         text-align: center;
         @include calc(width, "100% / 4");
 
-        @include respond-to(handhelds) {
+        @include respond-to(less-than-wide-handhelds) {
+            width: 100%;
             float: none;
-        }
-
-        @include respond-to(wide-handhelds) {
-            float: none;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
         }
 
         .avatar-wrapper {
@@ -164,6 +186,7 @@ p {
 
         .member-name {
             margin: 10px 0;
+            font-size: 16px;
         }
     }
 
@@ -180,8 +203,7 @@ p {
 
         position: relative;
         background: $bgColor;
-        padding: 30px;
-        height: 150px;
+        padding: 15px;
         @include border-radius(10px);
 
         // bubble arrow
@@ -250,12 +272,7 @@ p {
         }
 
         .tags {
-            margin: 10px 20px;
             text-align: right;
-
-            .icon-tag {
-                vertical-align: text-top;
-            }
         }
     }
 }
@@ -273,6 +290,7 @@ p {
         border: 1px solid #ccc;
         padding: 5px;
         margin-right: 1em;
+        margin-bottom: 1em;
         @include border-radius(5px);
 
         img {
@@ -287,12 +305,38 @@ p {
             margin-top: 1em;
         }
 
+        .back-details {
+            position: absolute;
+        }
+
         h2 {
             margin: 0;
         }
+        // for later selected use
+        .front {
+            display: block;
+        }
+        .back {
+            display: none;
+        }
     }
+
+    .work.selected {
+        .front {
+            display: none;
+        }
+        .back {
+            display: block;
+        }
+    }
+
     .image-wrapper {
         position: relative;
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
 
         .work-type {
             position: absolute;

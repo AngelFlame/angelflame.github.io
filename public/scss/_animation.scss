@@ -1,14 +1,21 @@
+@import "compass/css3";
+
 .reveal-animation.ng-enter {
-  -webkit-transition:0.5s linear all;
-  -moz-transition:0.5s linear all;
-  -o-transition:0.5s linear all;
-  transition:0.5s linear all;
+    @include transition-property(all);
+    @include transition-delay(0.5s);
+    @include transition-timing-function(linear);
 }
 .reveal-animation.ng-enter,
 .reveal-animation.ng-leave.ng-leave-active {
-  opacity:0;
+    @include opacity(0);
 }
 .reveal-animation.ng-leave,
 .reveal-animation.ng-enter.ng-enter-active {
-  opacity:1;
+    @include opacity(1);
+}
+
+// 
+
+.blur-animation {
+    @include filter(blur(2px));
 }

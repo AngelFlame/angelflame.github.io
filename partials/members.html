@@ -13,12 +13,11 @@
 
                 <!-- Keep this for later responsive use-->
                 <div class="details">
-                    <div class="name">{{member.nickname}} ({{member.name}})</div>
                     <div class="tags">
-                        <span class="label label-{{tag.type}}" ng-repeat="tag in member.tags">{{tag.name}}</span>
-                    </div>
-                    <div class="words">
-                        <span>{{member.say}}</span>
+                        <span class="label label-{{tag.type}}" ng-repeat="tag in member.tags">
+                            <span class="icon-tag glyphicon glyphicon-tag"></span>
+                            {{tag.name}}
+                        </span>
                     </div>
                 </div>
             </li>
