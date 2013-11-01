@@ -1,6 +1,7 @@
 var AngelFlameApp = angular.module('AngelFlameApp', [
     'ngRoute',
     'ngAnimate',
+    'firebase',
     'AngelFlameControllers' /* Dependencies */
 ]);
 
@@ -26,6 +27,7 @@ AngelFlameApp.config(['$routeProvider', function($routeProvider) {
             redirectTo: '/about'
         });
 }]);
+
 
 AngelFlameApp.run(function($rootScope, $route) {
     $rootScope.$on('$routeChangeSuccess', function(e, currentRoute, prevRoute) {

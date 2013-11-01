@@ -46,12 +46,17 @@ body {
 
     &.route-about {
         // http://miriadna.com/desctopwalls/images/max/Blue-sea-horizon.jpg
-        background: url(../img/sky.jpg);
+        background-image: url(../img/sky.jpg);
         color: #ffffff;
+
+        @include respond-to(less-than-wide-handhelds) {
+            background-size: initial;
+            background-position: 0 50%;
+        }
     }
     &.route-contact {
         // http://hqscreen.com/clouds-cityscapes-night-buildings-skyscrapers-taipei-101-wallpaper-28751/
-        background: url(../img/101-2.jpg);
+        background-image: url(../img/101-2.jpg);
 
         @include respond-to(less-than-wide-handhelds) {
             background-size: initial;
@@ -71,6 +76,10 @@ h1 {
     width: 300px;
     margin: 0 auto;
     margin-bottom: 20px;
+
+    @include respond-to(handhelds) {
+        width: 100%;
+    }
 }
 
 p {
@@ -93,6 +102,10 @@ p {
 
 .v-divider {
     border-right: 1px solid #ccc;
+
+    @include respond-to(handhelds) {
+        border-right: 0;
+    }
 }
 
 
@@ -145,9 +158,27 @@ p {
     float: none;
     margin: 6em auto;
     color: #ffffff;
+    font-size: 18px;
+
+    h1 {
+        display: none;
+    }
 
     .features-list {
         margin: 5em 0;
+
+        @include respond-to(handhelds) {
+            padding: 2em 0;
+            margin: 0;
+        }
+    }
+
+    @include respond-to(handhelds) {
+        margin: 3em auto 0 auto;
+
+        h1 {
+            display: block;
+        }
     }
 }
 
@@ -283,6 +314,10 @@ p {
 .works-container {
     .works {
         text-align: center;
+        list-style: none;
+        @include respond-to(handhelds) {
+            padding: 0;
+        }
     }
     .work {
         position: relative;
@@ -292,6 +327,10 @@ p {
         margin-right: 1em;
         margin-bottom: 1em;
         @include border-radius(5px);
+        @include respond-to(handhelds) {
+            width: 100%;
+            margin-right: 0;
+        }
 
         img {
             @include border-top-radius(5px);
@@ -336,6 +375,11 @@ p {
         img {
             width: 300px;
             height: 200px;
+
+            @include respond-to(handhelds) {
+                width: 100%;
+                height: auto;
+            }
         }
 
         .work-type {
@@ -366,4 +410,8 @@ p {
  */
 .about-container {
     margin-top: 8em;
+
+    @include respond-to(handhelds) {
+        margin-top: 0;
+    }
 }

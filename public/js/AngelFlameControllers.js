@@ -4,8 +4,9 @@ AngelFlameControllers.controller('AboutController', function($scope) {
 
 });
 
-AngelFlameControllers.controller('ContactController', function($scope, $rootScope) {
-
+AngelFlameControllers.controller('ContactController', function($scope, angularFire) {
+    var url = 'https://angelflame.firebaseio.com';
+    $scope.items = angularFire(url, $scope, 'items');
 });
 
 AngelFlameControllers.controller('MembersController', function($scope, $http) {
@@ -43,11 +44,5 @@ AngelFlameControllers.controller('WorksController', function($scope, $http) {
 
     $scope.leave = function() {
         $scope.selected = false;
-    };
-});
-
-AngelFlameControllers.directive('ngTap', function() {
-    return function($scope, $element, $attributes) {
-
     };
 });

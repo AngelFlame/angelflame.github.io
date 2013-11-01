@@ -72,11 +72,17 @@ body {
   background-size: cover;
 }
 body.route-about {
-  background: url(../img/sky.jpg);
+  background-image: url(../img/sky.jpg);
   color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  body.route-about {
+    background-size: initial;
+    background-position: 0 50%;
+  }
+}
 body.route-contact {
-  background: url(../img/101-2.jpg);
+  background-image: url(../img/101-2.jpg);
 }
 @media only screen and (max-width: 767px) {
   body.route-contact {
@@ -96,6 +102,11 @@ h1 {
   width: 300px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 479px) {
+  h1 {
+    width: 100%;
+  }
 }
 
 p {
@@ -121,6 +132,11 @@ p {
 
 .v-divider {
   border-right: 1px solid #ccc;
+}
+@media only screen and (max-width: 479px) {
+  .v-divider {
+    border-right: 0;
+  }
 }
 
 .glyphicon-fire {
@@ -163,9 +179,27 @@ p {
   float: none;
   margin: 6em auto;
   color: #ffffff;
+  font-size: 18px;
+}
+.contact-container h1 {
+  display: none;
 }
 .contact-container .features-list {
   margin: 5em 0;
+}
+@media only screen and (max-width: 479px) {
+  .contact-container .features-list {
+    padding: 2em 0;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .contact-container {
+    margin: 3em auto 0 auto;
+  }
+  .contact-container h1 {
+    display: block;
+  }
 }
 
 /*
@@ -293,6 +327,12 @@ p {
  */
 .works-container .works {
   text-align: center;
+  list-style: none;
+}
+@media only screen and (max-width: 479px) {
+  .works-container .works {
+    padding: 0;
+  }
 }
 .works-container .work {
   position: relative;
@@ -306,6 +346,12 @@ p {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+}
+@media only screen and (max-width: 479px) {
+  .works-container .work {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .works-container .work img {
   -moz-border-radius-topleft: 5px;
@@ -345,6 +391,12 @@ p {
   width: 300px;
   height: 200px;
 }
+@media only screen and (max-width: 479px) {
+  .works-container .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
 .works-container .image-wrapper .work-type {
   position: absolute;
   text-align: left;
@@ -373,4 +425,9 @@ p {
  */
 .about-container {
   margin-top: 8em;
+}
+@media only screen and (max-width: 479px) {
+  .about-container {
+    margin-top: 0;
+  }
 }

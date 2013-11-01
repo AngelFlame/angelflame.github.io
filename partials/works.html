@@ -3,26 +3,24 @@
         <h1>Works</h1>
         <p>These are handcrafted works made by us with Love <i class="fa fa-heart"></i></p>
 
-        <div class="col-lg-8 col-lg-offset-2">
-            <ul class="works list-unstyled clearfix">
-                <li class="work" data-type="{{work.type}}" ng-repeat="work in worksData">
-                    <div class="front">
-                        <div class="image-wrapper">
-                            <img ng-src="{{work.logo}}" alt="{{work.name}}">
-                            <span class="work-type fa-stack fa-lg {{work.type}}">
-                                <i class="fa fa-square fa-stack-2x"></i>
-                                <i class="fa {{work.icon}} fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </div>
-                        <div class="details">
-                            <h2>{{work.name}}</h2>
-                        </div>
+        <ul class="works clearfix col-lg-8 col-lg-offset-2">
+            <li class="work" data-type="{{work.type}}" ng-repeat="work in worksData">
+                <div class="front">
+                    <div class="image-wrapper">
+                        <img ng-src="{{work.logo}}" alt="{{work.name}}">
+                        <span class="work-type fa-stack fa-lg {{work.type}}">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa {{work.icon}} fa-stack-1x fa-inverse"></i>
+                        </span>
                     </div>
-                    <div class="back hide">
-                        {{work.description}}
+                    <div class="details">
+                        <h2>{{work.name}}</h2>
                     </div>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="back hide">
+                    {{work.description}}
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
