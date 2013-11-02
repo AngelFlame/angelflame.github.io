@@ -3,7 +3,7 @@
         "name" : "You-Sheng, Lin",
         "nickname" : "Eyesbad",
         "website" : "http://eyesbad.blogspot.tw/",
-        "avatar" : "http://lorempixel.com/150/150/",
+        "avatar" : "public/img/avatars/eyesbad.jpg",
         "tags" : [
             { "name" : "Computer Graphics", "type" : "primary" },
             { "name" : "Sleeping", "type" : "info" }
@@ -14,7 +14,7 @@
         "name" : "Chia-Lung, Chen",
         "nickname" : "EragonJ",
         "website" : "http://eragonj.me",
-        "avatar" : "http://lorempixel.com/150/150/",
+        "avatar" : "public/img/avatars/eragonj.jpg",
         "tags" : [
             { "name" : "FrontEnd", "type" : "primary" },
             { "name" : "JavaScript", "type" : "primary" },
@@ -26,15 +26,15 @@
         "name" : "Liang-Chi, Lee",
         "nickname" : "Popochess",
         "website" : "http://popochess.blogspot.tw/",
-        "avatar" : "http://lorempixel.com/150/150/",
+        "avatar" : "public/img/avatars/popochess.jpg",
         "tags" : [
             { "name" : "iOS", "type" : "primary" }
         ],
         "say" : "We can do something different than the others."
     },
     {
-        "name" : "Nuz",
-        "nickname" : "Nuz",
+        "name" : "You !!",
+        "nickname" : "Just you",
         "website" : "http://angelflame.org",
         "avatar" : "http://lorempixel.com/150/150/",
         "tags" : [

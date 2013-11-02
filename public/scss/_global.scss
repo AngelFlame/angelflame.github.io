@@ -1,0 +1,155 @@
+@import "compass/css3";
+@import "_mixins.scss";
+
+// angelflame global
+html,
+body {
+    font-family: 'Bubbler One', sans-serif;
+
+    // testing
+    height: 100%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Bubbler One', sans-serif;
+    }
+}
+
+.navbar {
+    font-size: 18px;
+}
+
+.glyphicon.glyphicon-map-marker {
+    color: lightskyblue;
+}
+
+.fa.fa-heart {
+    color: lightcoral;
+}
+
+.tags {
+    .icon-tag {
+        vertical-align: text-top;
+    }
+}
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.route-about {
+        // http://miriadna.com/desctopwalls/images/max/Blue-sea-horizon.jpg
+        background-image: url(../img/sky.jpg);
+        color: #ffffff;
+
+        @include respond-to(less-than-wide-handhelds) {
+            background-size: initial;
+            background-position: 0 50%;
+        }
+    }
+    &.route-members {
+        background: #eeeeee;
+    }
+    &.route-works {
+        // http://freestocktextures.com/texture/id/169
+        background-image: url(../img/brick.jpg);
+        
+        @include respond-to(less-than-wide-handhelds) {
+            background-size: initial;
+            background-position: 60% 0;
+        }
+    }
+    &.route-contact {
+        // http://hqscreen.com/clouds-cityscapes-night-buildings-skyscrapers-taipei-101-wallpaper-28751/
+        background-image: url(../img/101-2.jpg);
+
+        @include respond-to(less-than-wide-handhelds) {
+            background-size: initial;
+            background-position: 60% 0;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #c9c9c9;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include respond-to(handhelds) {
+        width: 100%;
+    }
+}
+
+p {
+    width: 500px;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include respond-to(handhelds) {
+        width: 100%;
+    }
+    @include respond-to(wide-handhelds) {
+        width: 100%;
+    }
+}
+
+.container {
+    padding-top: 10px;
+}
+
+.v-divider {
+    border-right: 1px solid #ccc;
+}
+
+
+.glyphicon-fire {
+    // color: #cc0000;
+    color: rgb(241, 73, 73);
+}
+
+.logo {
+
+    $imgWidth: 600px;
+    $imgHeight: 518px;
+
+    div {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background: white;
+        z-index: 1001;
+        overflow: hidden;
+    }
+    img {
+        width: $imgWidth;
+        height: $imgHeight;
+        position: absolute;
+        top: 10%;
+    }
+    .before {
+        left: 0;
+        background-position: 50% 50%;
+
+        img {
+            right: -0.5 * $imgWidth;
+        }
+    }
+    .after {
+        right: 0;
+        background-position: 0% 50%;
+
+        img {
+            left: -0.5 * $imgWidth;
+        }
+    }
+}

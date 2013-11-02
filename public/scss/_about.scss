@@ -1,0 +1,13 @@
+@import "compass/css3";
+@import "_mixins.scss";
+
+/*
+ * about.html
+ */
+.about-container {
+    margin-top: 8em;
+
+    @include respond-to(handhelds) {
+        margin-top: 0;
+    }
+}

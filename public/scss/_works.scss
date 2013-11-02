@@ -1,0 +1,104 @@
+@import "compass/css3";
+@import "_mixins.scss";
+
+/*
+ * works.html
+ */
+.works-container {
+    h1 {
+        margin-bottom: 60px;
+    }
+    .works {
+        text-align: center;
+        list-style: none;
+        @include respond-to(handhelds) {
+            padding: 0;
+        }
+    }
+    .work {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        background: #ffffff;
+
+        @include border-radius(5px);
+        @include respond-to(handhelds) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        img {
+            @include border-top-radius(5px);
+        }
+
+        .details {
+            padding: 5px;
+            padding-bottom: 0;
+
+            // because work-type needs 1em boundary
+            margin-top: 1em;
+        }
+
+        .back-details {
+            position: absolute;
+        }
+
+        h2 {
+            margin: 0;
+        }
+        // for later selected use
+        .front {
+            display: block;
+        }
+        .back {
+            display: none;
+        }
+    }
+
+    .work.selected {
+        .front {
+            display: none;
+        }
+        .back {
+            display: block;
+        }
+    }
+
+    .image-wrapper {
+        position: relative;
+
+        img {
+            width: 300px;
+            height: 200px;
+
+            @include respond-to(handhelds) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .work-type {
+            position: absolute;
+            text-align: left;
+            left: 50%;
+            bottom: 0;
+            margin-left: -1em;
+            margin-bottom: -1em;
+
+            color: tomato;
+            border: 1px solid #ffffff;
+            background: #ffffff;
+            @include border-radius(8px);
+
+            &.app {
+                color: tomato;
+            }
+            &.website {
+                color: cornflowerblue;
+            }
+        }
+    }
+}

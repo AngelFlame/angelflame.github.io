@@ -59,8 +59,12 @@ body h6 {
   font-size: 18px;
 }
 
+.glyphicon.glyphicon-map-marker {
+  color: lightskyblue;
+}
+
 .fa.fa-heart {
-  color: orangered;
+  color: lightcoral;
 }
 
 .tags .icon-tag {
@@ -81,6 +85,18 @@ body.route-about {
     background-position: 0 50%;
   }
 }
+body.route-members {
+  background: #eeeeee;
+}
+body.route-works {
+  background-image: url(../img/brick.jpg);
+}
+@media only screen and (max-width: 767px) {
+  body.route-works {
+    background-size: initial;
+    background-position: 60% 0;
+  }
+}
 body.route-contact {
   background-image: url(../img/101-2.jpg);
 }
@@ -89,9 +105,6 @@ body.route-contact {
     background-size: initial;
     background-position: 60% 0;
   }
-}
-body.route-members {
-  background: #eeeeee;
 }
 
 h1 {
@@ -133,11 +146,6 @@ p {
 .v-divider {
   border-right: 1px solid #ccc;
 }
-@media only screen and (max-width: 479px) {
-  .v-divider {
-    border-right: 0;
-  }
-}
 
 .glyphicon-fire {
   color: #f14949;
@@ -173,6 +181,18 @@ p {
 }
 
 /*
+ * about.html
+ */
+.about-container {
+  margin-top: 8em;
+}
+@media only screen and (max-width: 479px) {
+  .about-container {
+    margin-top: 0;
+  }
+}
+
+/*
  * contact.html
  */
 .contact-container {
@@ -184,11 +204,17 @@ p {
 .contact-container h1 {
   display: none;
 }
+.contact-container a {
+  color: white;
+  text-decoration: underline;
+}
 .contact-container .features-list {
-  margin: 5em 0;
+  font-size: 24px;
+  margin: 3.5em 1.5em;
 }
 @media only screen and (max-width: 479px) {
   .contact-container .features-list {
+    font-size: 18px;
     padding: 2em 0;
     margin: 0;
   }
@@ -325,6 +351,9 @@ p {
 /*
  * works.html
  */
+.works-container h1 {
+  margin-bottom: 60px;
+}
 .works-container .works {
   text-align: center;
   list-style: none;
@@ -341,6 +370,7 @@ p {
   padding: 5px;
   margin-right: 1em;
   margin-bottom: 1em;
+  background: #ffffff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -418,16 +448,4 @@ p {
 }
 .works-container .image-wrapper .work-type.website {
   color: cornflowerblue;
-}
-
-/*
- * about.html
- */
-.about-container {
-  margin-top: 8em;
-}
-@media only screen and (max-width: 479px) {
-  .about-container {
-    margin-top: 0;
-  }
 }

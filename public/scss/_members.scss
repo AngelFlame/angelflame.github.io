@@ -1,0 +1,128 @@
+@import "compass/css3";
+@import "_mixins.scss";
+
+/*
+ * member.html
+ */
+.member-container {
+
+    .members {
+        margin: 20px 0 0 0;
+    }
+
+    .member {
+        padding-bottom: 10px;
+        float: left;
+        text-align: center;
+        @include calc(width, "100% / 4");
+
+        @include respond-to(less-than-wide-handhelds) {
+            width: 100%;
+            float: none;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .avatar-wrapper {
+            margin: 0 10px 0 0;
+
+            img {
+                $avatarSize: 150px;
+                width: $avatarSize;
+                height: $avatarSize;
+                @include border-radius($avatarSize / 2);
+            }
+        }
+
+        .member-name {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    }
+
+    .details {
+        display: none;
+
+        @include respond-to(less-than-wide-handhelds) {
+            display: block;
+        }
+    }
+
+    .shared-detail-window {
+        $bgColor: #dddddd;
+
+        position: relative;
+        background: $bgColor;
+        padding: 15px;
+        @include border-radius(10px);
+
+        // bubble arrow
+        &:before {
+            content: " ";
+            position: absolute;
+            top: -10px;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            border-top: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid $bgColor;
+        }
+
+        @for $i from 0 through 3 {
+            &.member-#{$i}:before {
+                $leftBase: 25 * $i + 12.5;
+                @include calc(left, "#{$leftBase}% - 15px");
+
+                // It will create this 
+                //
+                // &.member-0:before {
+                //     @include calc(left, "12.5% - 15px");
+                // }
+                // &.member-1:before {
+                //     @include calc(left, "37.5% - 15px");
+                // }
+                // &.third-member:before {
+                //     @include calc(left, "62.5% - 15px");
+                // }
+                // &.fourth-member:before {
+                //     @include calc(left, "87.5% - 15px");
+                // }
+            }
+        }
+
+        @include respond-to(less-than-wide-handhelds) {
+            display: none;
+        }
+
+        .say {
+            position: relative;
+            font-size: 44px;
+            text-align: center;
+            // line-height: 90px;
+            // height: 100%;
+            padding: 0 20px;
+
+            &:before {
+                font-family: 'Ariel';
+                position: absolute;
+                content: "“";
+                // top: -10px;
+                left: -25px;
+            }
+
+            &:after {
+                font-family: 'Ariel';
+                position: absolute;
+                content: "”";
+                // bottom: -10px;
+                right: -25px;
+            }
+        }
+
+        .tags {
+            text-align: right;
+        }
+    }
+}
