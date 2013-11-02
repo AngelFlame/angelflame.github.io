@@ -40,20 +40,22 @@ AngelFlameApp.run(function($rootScope, $route) {
 // manual bootstrap
 angular.element(document).ready(function() {
 
-    /*
     window.setTimeout(function() {
         // start animations
         angular.element('.logo > .before').addClass('animated fadeOutLeft');
         angular.element('.logo > .after').addClass('animated fadeOutRight');
 
+        // because animation is started, we can show container
+        // to make users see things inside.
+        angular.element('.container').removeClass('invisible');
+
         window.setTimeout(function() {
             // hide animations
             angular.element('.logo').addClass('hide');
         }, 1000);
-    }, 1000);
-    */
+    }, 1500);
 
-    angular.element('.logo').addClass('hide');
+    // angular.element('.logo').addClass('hide');
 
     // inject modules
     // XXX: use document, otherwise ngAnimate will not work, weird

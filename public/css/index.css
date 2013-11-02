@@ -165,6 +165,13 @@ p {
   position: absolute;
   top: 10%;
 }
+@media only screen and (max-width: 479px) {
+  .logo img {
+    width: 200%;
+    height: auto;
+    top: 20%;
+  }
+}
 .logo .before {
   left: 0;
   background-position: 50% 50%;
@@ -172,12 +179,24 @@ p {
 .logo .before img {
   right: -300px;
 }
+@media only screen and (max-width: 479px) {
+  .logo .before img {
+    left: 0;
+    right: initial;
+  }
+}
 .logo .after {
   right: 0;
   background-position: 0% 50%;
 }
 .logo .after img {
   left: -300px;
+}
+@media only screen and (max-width: 479px) {
+  .logo .after img {
+    left: initial;
+    right: 0;
+  }
 }
 
 /*

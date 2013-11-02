@@ -135,6 +135,14 @@ p {
         height: $imgHeight;
         position: absolute;
         top: 10%;
+
+        @include respond-to(handhelds) {
+            width: 200%;
+            height: auto;
+
+            // because of the stupid url bar in iphone
+            top: 20%;
+        }
     }
     .before {
         left: 0;
@@ -142,6 +150,11 @@ p {
 
         img {
             right: -0.5 * $imgWidth;
+
+            @include respond-to(handhelds) {
+                left: 0;
+                right: initial;
+            }
         }
     }
     .after {
@@ -150,6 +163,11 @@ p {
 
         img {
             left: -0.5 * $imgWidth;
+
+            @include respond-to(handhelds) {
+                left: initial;
+                right: 0;
+            }
         }
     }
 }
