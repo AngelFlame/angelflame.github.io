@@ -1,7 +1,6 @@
 var AngelFlameApp = angular.module('AngelFlameApp', [
     'ngRoute',
     'ngAnimate',
-    'firebase',
     'AngelFlameControllers' /* Dependencies */
 ]);
 

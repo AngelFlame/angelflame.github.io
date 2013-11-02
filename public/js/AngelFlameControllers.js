@@ -4,9 +4,8 @@ AngelFlameControllers.controller('AboutController', function($scope) {
 
 });
 
-AngelFlameControllers.controller('ContactController', function($scope, angularFire) {
-    var url = 'https://angelflame.firebaseio.com';
-    $scope.items = angularFire(url, $scope, 'items');
+AngelFlameControllers.controller('ContactController', function($scope) {
+
 });
 
 AngelFlameControllers.controller('MembersController', function($scope, $http) {
