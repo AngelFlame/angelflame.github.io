@@ -25,8 +25,8 @@
         background: #ffffff;
 
         @include border-radius(5px);
+
         @include respond-to(handhelds) {
-            width: 100%;
             margin-right: 0;
         }
 
@@ -34,7 +34,11 @@
             @include border-top-radius(5px);
         }
 
-        .details {
+        h2 {
+            margin: 0;
+        }
+
+        .work-name {
             padding: 5px;
             padding-bottom: 0;
 
@@ -42,28 +46,17 @@
             margin-top: 1em;
         }
 
-        .back-details {
-            position: absolute;
+        .back {
+            font-size: 20px;
         }
 
-        h2 {
-            margin: 0;
-        }
-        // for later selected use
-        .front {
-            display: block;
-        }
-        .back {
-            display: none;
-        }
-    }
-
-    .work.selected {
-        .front {
-            display: none;
-        }
-        .back {
-            display: block;
+        .flip-container {
+            &,
+            & > .front,
+            & > .back {
+                width: 300px;
+                height: 252px;
+            }
         }
     }
 
