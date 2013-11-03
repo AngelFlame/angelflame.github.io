@@ -23,6 +23,13 @@
         font-size: 24px;
         margin: 3.5em 1.5em;
 
+        // to make them the same width
+        i {
+            display: inline-block;
+            width: 24px;
+            text-align: center;
+        }
+
         @include respond-to(handhelds) {
             font-size: 18px;
             padding: 2em 0;
@@ -31,7 +38,7 @@
     }
 
     @include respond-to(handhelds) {
-        margin: 3em auto 0 auto;
+        margin: 3em auto 5em auto;
 
         h1 {
             display: block;

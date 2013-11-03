@@ -231,6 +231,11 @@ p {
   font-size: 24px;
   margin: 3.5em 1.5em;
 }
+.contact-container .features-list i {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
 @media only screen and (max-width: 479px) {
   .contact-container .features-list {
     font-size: 18px;
@@ -240,7 +245,7 @@ p {
 }
 @media only screen and (max-width: 479px) {
   .contact-container {
-    margin: 3em auto 0 auto;
+    margin: 3em auto 5em auto;
   }
   .contact-container h1 {
     display: block;
@@ -281,6 +286,9 @@ p {
   -ms-border-radius: 75px;
   -o-border-radius: 75px;
   border-radius: 75px;
+  -webkit-box-shadow: 2px 2px 5px #666666;
+  -moz-box-shadow: 2px 2px 5px #666666;
+  box-shadow: 2px 2px 5px #666666;
 }
 .member-container .member .member-name {
   margin: 10px 0;

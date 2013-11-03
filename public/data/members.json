@@ -6,9 +6,10 @@
         "avatar" : "public/img/avatars/eyesbad.jpg",
         "tags" : [
             { "name" : "Computer Graphics", "type" : "primary" },
-            { "name" : "Sleeping", "type" : "info" }
+            { "name" : "iOS", "type" : "primary" },
+            { "name" : "Food", "type" : "info" }
         ],
-        "say" : "We are changing the world."
+        "say" : "Cogito ergo sum."
     },
     { 
         "name" : "Chia-Lung, Chen",
@@ -20,7 +21,7 @@
             { "name" : "JavaScript", "type" : "primary" },
             { "name" : "Travelling", "type" : "info" }
         ],
-        "say" : "We make awesome stuffs for people."
+        "say" : "Don't give up your dream."
     },
     {
         "name" : "Liang-Chi, Lee",
@@ -28,20 +29,21 @@
         "website" : "http://popochess.blogspot.tw/",
         "avatar" : "public/img/avatars/popochess.jpg",
         "tags" : [
-            { "name" : "iOS", "type" : "primary" }
+            { "name" : "iOS", "type" : "primary" },
+            { "name" : "Guitar", "type" : "info" }
         ],
-        "say" : "We can do something different than the others."
+        "say" : "Happiness is the key to life."
     },
     {
         "name" : "You !!",
-        "nickname" : "Just you",
+        "nickname" : "xD",
         "website" : "http://angelflame.org",
-        "avatar" : "http://lorempixel.com/150/150/",
+        "avatar" : "public/img/avatars/lorempixel-2.jpg",
         "tags" : [
             { "name" : "UI design", "type" : "primary" },
-            { "name" : "Video Making", "type" : "primary" },
-            { "name" : "Sleeping", "type" : "info" }
+            { "name" : "UX design", "type" : "primary" },
+            { "name" : "Have a dream", "type" : "info" }
         ],
-        "say" : "You guys rock"
+        "say" : "We want you!"
     }
 ]
