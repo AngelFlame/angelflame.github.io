@@ -37,7 +37,7 @@
 
 html,
 body {
-  font-family: 'Bubbler One', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   height: 100%;
 }
 html h1,
@@ -52,7 +52,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  font-family: 'Bubbler One', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .navbar {
@@ -123,7 +123,7 @@ h1 {
 }
 
 p {
-  width: 500px;
+  width: 600px;
   font-size: 24px;
   margin: 0 auto;
   margin-bottom: 20px;
