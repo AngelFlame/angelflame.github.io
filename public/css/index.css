@@ -443,6 +443,7 @@ p {
   border-top-right-radius: 5px;
 }
 .works-container .work h2 {
+  color: #333;
   margin: 0;
 }
 .works-container .work .work-name {
@@ -451,7 +452,9 @@ p {
   margin-top: 1em;
 }
 .works-container .work .back {
+  color: #333;
   font-size: 20px;
+  padding-top: 30%;
 }
 .works-container .work .flip-container, .works-container .work .flip-container > .front, .works-container .work .flip-container > .back {
   width: 300px;

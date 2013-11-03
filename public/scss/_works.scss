@@ -34,7 +34,9 @@
             @include border-top-radius(5px);
         }
 
+
         h2 {
+            color: #333;
             margin: 0;
         }
 
@@ -47,7 +49,11 @@
         }
 
         .back {
+            color: #333;
             font-size: 20px;
+
+            // try to make descriptions in the vertical middle
+            padding-top: 30%;
         }
 
         .flip-container {

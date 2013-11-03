@@ -5,23 +5,23 @@
 
         <ul class="works clearfix col-lg-8 col-lg-offset-2">
             <li class="work flip-animation" data-type="{{work.type}}" ng-repeat="work in worksData">
-                <div class="flip-container">
-                    <div class="front">
-                        <div class="image-wrapper">
-                            <img ng-src="{{work.logo}}" alt="{{work.name}}">
-                            <span class="work-type fa-stack fa-lg {{work.type}}">
-                                <i class="fa fa-square fa-stack-2x"></i>
-                                <i class="fa {{work.icon}} fa-stack-1x fa-inverse"></i>
-                            </span>
+                <a href="{{work.link}}" target="_blank">
+                    <div class="flip-container">
+                        <div class="front">
+                            <div class="image-wrapper">
+                                <img ng-src="{{work.logo}}" alt="{{work.name}}">
+                                <span class="work-type fa-stack fa-lg {{work.type}}">
+                                    <i class="fa fa-square fa-stack-2x"></i>
+                                    <i class="fa {{work.icon}} fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="work-name">
+                                <h2>{{work.name}}</h2>
+                            </div>
                         </div>
-                        <div class="work-name">
-                            <h2>{{work.name}}</h2>
-                        </div>
+                        <div class="back">{{work.description}}</div>
                     </div>
-                    <div class="back">
-                        {{work.description}}
-                    </div>
-                </div>
+                </a>
             </li>
         </ul>
     </div>
