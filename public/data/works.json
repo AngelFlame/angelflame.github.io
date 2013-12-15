@@ -1,7 +1,7 @@
 [
     {
         "name" : "Pencil Art",
-        "logo" : "http://lorempixel.com/300/200/",
+        "logo" : "public/img/works/pencil-art.png",
         "link" : "https://itunes.apple.com/tw/app/pencilart/id693995392?l=zh&mt=8",
         "type" : "app",
         "icon" : "fa-mobile",
@@ -9,7 +9,7 @@
     },
     {
         "name" : "AngelFlame",
-        "logo" : "http://lorempixel.com/300/200/",
+        "logo" : "public/img/works/angelflame.png",
         "link" : "http://angelflame.org",
         "type" : "website",
         "icon" : "fa-link",
