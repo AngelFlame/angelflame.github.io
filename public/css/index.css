@@ -85,11 +85,15 @@ body h6 {
 }
 
 .glyphicon.glyphicon-map-marker {
-  color: lightskyblue;
+  color: #ccc;
 }
 
 .fa.fa-heart {
   color: lightcoral;
+}
+
+.fa.fa-twitter {
+  color: #73CCFF;
 }
 
 .tags .icon-tag {
