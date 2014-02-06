@@ -131,7 +131,9 @@ p {
         width: 50%;
         height: 100%;
         background: white;
-        z-index: 1001;
+
+        // `1` higher than uservoice
+        z-index: 100003;
         overflow: hidden;
     }
     img {

@@ -185,7 +185,7 @@ p {
   width: 50%;
   height: 100%;
   background: white;
-  z-index: 1001;
+  z-index: 100003;
   overflow: hidden;
 }
 .logo img {
