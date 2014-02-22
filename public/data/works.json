@@ -8,6 +8,14 @@
         "description" : "You can pencilized your photo with our brandnew app. :D"
     },
     {
+        "name" : "HackerReader",
+        "logo" : "public/img/works/hacker-reader.png",
+        "link" : "http://angelflame.org/hacker-reader/",
+        "type" : "app",
+        "icon" : "fa-mobile",
+        "description" : "With HackerReader, you just have to focus on the news you really want from Hacker News."
+    },
+    {
         "name" : "AngelFlame",
         "logo" : "public/img/works/angelflame.png",
         "link" : "http://angelflame.org",

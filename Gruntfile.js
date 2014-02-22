@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       lib_test: {
-        src: ['public/js/*.js', 'test/**/*.js']
+        src: ['public/js/*.js', 'test/**/*.js', '!public/js/uservoice.js']
       }
     },
     compass: {
